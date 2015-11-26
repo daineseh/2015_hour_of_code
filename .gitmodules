@@ -1,0 +1,3 @@
+[submodule "sample2/pytumblr"]
+	path = sample2/pytumblr
+	url = https://github.com/tumblr/pytumblr.git
