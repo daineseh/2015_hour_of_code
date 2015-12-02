@@ -35,9 +35,10 @@ def main():
 
     posts_info = client.posts(user)
     for post in posts_info.get('posts'):
-        data = post.get('photos')[0]
+        data = post.get('photos')
         if not data:
             continue
+        data = data[0]
         print data['original_size']['url']
         pictures.append(data['original_size']['url'])
 
